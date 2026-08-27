@@ -13,13 +13,14 @@ import { CheckoutModal } from './components/CheckoutModal';
 import { PagePreviewModal } from './components/PagePreviewModal';
 import { GalleryPage } from './types';
 import { GALLERY_PAGES } from './data/galleryPages';
+import { redirectTo } from './utils/redirect';
 
 export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [selectedGalleryPage, setSelectedGalleryPage] = useState<GalleryPage | null>(null);
 
   const handleOpenCheckout = () => {
-    setIsCheckoutOpen(true);
+    redirectTo();
   };
 
   const handleCloseCheckout = () => {
