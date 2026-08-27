@@ -1,0 +1,6 @@
+{
+  "name": "21 Dias de Conexão em Família",
+  "description": "Página oficial do Desafio 21 Dias de Conexão em Família - Um guia prático para reconectar pais e filhos em minutos por dia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
