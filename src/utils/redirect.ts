@@ -1,6 +1,5 @@
 // Configuração centralizada da URL de Checkout
-// Caso você use Kiwify, Hotmart, Eduzz, Kirvano, Cakto, Braip, etc., altere a URL abaixo:
-export const CHECKOUT_BASE_URL = 'https://pay.kiwify.com.br/desafio21dias';
+export const CHECKOUT_BASE_URL = 'https://pay.wiapy.com/fZ67hDPP1BrP';
 
 /**
  * Redireciona para uma URL garantindo o repasse de todos os parâmetros de URL (UTMs, SRC, SCK, etc.)

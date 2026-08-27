@@ -117,7 +117,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenCheckout, 
                   id="pricing-cta-button"
                   className="w-full bg-[#E06A48] hover:bg-[#C95535] text-white py-4 px-4 rounded-2xl text-base sm:text-lg font-black tracking-wide shadow-xl hover:shadow-2xl transition-all transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer uppercase group"
                 >
-                  <span>QUERO COMEÇAR NOSSA RECONEXÃO</span>
+                  <span>LIBERAR ACESSO AGORA</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
 

@@ -3,11 +3,20 @@ import { Heart, ArrowRight, Sparkles, XCircle } from 'lucide-react';
 import { MainMockup } from './MainMockup';
 
 interface HeroProps {
-  onOpenCheckout: () => void;
+  onOpenCheckout?: () => void;
   onOpenPreview: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onOpenCheckout, onOpenPreview }) => {
+export const Hero: React.FC<HeroProps> = ({ onOpenPreview }) => {
+  const scrollToHowItWorks = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById('como-funciona');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.hash = '#como-funciona';
+    }
+  };
   return (
     <section className="relative pt-8 pb-16 sm:pt-14 sm:pb-24 px-4 sm:px-6 overflow-hidden">
       {/* Soft Background Accents */}
@@ -80,14 +89,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCheckout, onOpenPreview }) => 
 
         {/* Primary CTA Area */}
         <div className="max-w-md mx-auto flex flex-col items-center">
-          <button
-            onClick={onOpenCheckout}
+          <a
+            href="#como-funciona"
+            onClick={scrollToHowItWorks}
             id="hero-cta-button"
-            className="w-full bg-[#E06A48] hover:bg-[#C95535] text-white py-4 px-8 rounded-2xl text-base sm:text-lg font-black tracking-wide shadow-xl hover:shadow-2xl transition-all transform active:scale-98 flex items-center justify-center gap-3 cursor-pointer group uppercase"
+            className="w-full bg-[#E06A48] hover:bg-[#C95535] text-white py-4 px-8 rounded-2xl text-base sm:text-lg font-black tracking-wide shadow-xl hover:shadow-2xl transition-all transform active:scale-98 flex items-center justify-center gap-3 cursor-pointer group uppercase text-center"
           >
             <span>QUERO RECONECTAR MINHA FAMÍLIA</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
 
       </div>

@@ -55,7 +55,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenCheckout
   const currentDayData: DayCalendarItem = ALL_21_DAYS.find(d => d.day === selectedDay) || ALL_21_DAYS[0];
 
   return (
-    <section id="como-funciona" className="py-16 sm:py-20 px-4 sm:px-6 bg-[#F5EFEB] border-t border-[#E8DFC8]/70">
+    <section id="como-funciona" className="py-16 sm:py-20 px-4 sm:px-6 bg-[#F5EFEB] border-t border-[#E8DFC8]/70 scroll-mt-6">
       <div className="max-w-5xl mx-auto">
         
         {/* Section Header */}
