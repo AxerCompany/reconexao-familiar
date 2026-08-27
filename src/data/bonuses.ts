@@ -24,7 +24,7 @@ export const BONUSES_LIST: BonusItem[] = [
     features: [
       '30 cards temáticos com perguntas instigantes',
       'Sem respostas certas ou erradas: foco em conexão',
-      'Ideal para crianças pequenas e pré-adolescentes'
+      'Ideal para crianças de 3 a 10 anos'
     ]
   },
   {

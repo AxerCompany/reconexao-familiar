@@ -133,21 +133,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenCheckout, 
 
         </div>
 
-        {/* 7 Days Guarantee Badge */}
-        <div className="mt-8 bg-white rounded-2xl p-5 sm:p-6 border border-[#E5DACB] shadow-sm flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-          <div className="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 border border-emerald-200 shadow-2xs">
-            <ShieldCheck className="w-8 h-8" />
-          </div>
-          <div className="flex-1">
-            <h4 className="text-base font-black text-[#2C2A29]">
-              Garantia Incondicional de 7 Dias
-            </h4>
-            <p className="text-xs sm:text-sm text-[#7A7268] leading-relaxed mt-0.5">
-              Experimente as missões com sua família por 7 dias. Se você não sentir uma aproximação real com seus filhos, devolvemos 100% do seu dinheiro. Sem perguntas.
-            </p>
-          </div>
-        </div>
-
       </div>
     </section>
   );

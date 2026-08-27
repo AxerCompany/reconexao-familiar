@@ -22,14 +22,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCheckout, onOpenPreview }) => 
         </div>
 
         {/* Main Big Headline */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#2C2A29] tracking-tight leading-[1.12] mb-4">
-          21 DIAS DE CONEXÃO <br className="hidden sm:inline" />
-          <span className="text-[#E06A48]">EM FAMÍLIA</span>
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#2C2A29] tracking-tight leading-[1.15] mb-4 uppercase">
+          VOLTE A SE SENTIR MAIS PERTO DOS SEUS FILHOS <br className="hidden sm:inline" />
+          <span className="text-[#E06A48]">EM APENAS 21 DIAS</span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-base sm:text-xl font-bold text-[#4A433A] max-w-3xl mx-auto leading-relaxed mb-8">
-          Um guia prático para transformar a rotina da sua casa em momentos de presença, conversa e memórias que seus filhos vão lembrar para sempre.
+          Com uma pequena missão de 10 minutos por dia para vocês voltarem a conversar, brincar e criar momentos de verdade juntos.
         </p>
 
         {/* 4 Pillars / Reassurance Points */}

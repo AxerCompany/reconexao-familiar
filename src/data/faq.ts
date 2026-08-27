@@ -3,7 +3,7 @@ import { FaqItem } from '../types';
 export const FAQ_LIST: FaqItem[] = [
   {
     question: "Para qual faixa etária de filhos o desafio é indicado?",
-    answer: "O Desafio 21 Dias de Conexão foi pensado para crianças de 3 a 14 anos, além de ser facilmente adaptável para adolescentes. As missões focam em conversas, escuta ativa, brincadeiras clássicas e afeto, que funcionam com qualquer idade."
+    answer: "O Desafio 21 Dias de Conexão em Família foi pensado principalmente para famílias com crianças de 3 a 10 anos. As missões foram criadas para serem simples, divertidas e fáceis de realizar juntas."
   },
   {
     question: "E se a minha rotina for muito corrida e eu não tiver tempo?",

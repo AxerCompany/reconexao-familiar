@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { Hero } from './components/Hero';
 import { PainPoints } from './components/PainPoints';
-import { Transformation } from './components/Transformation';
 import { TimelineSection } from './components/TimelineSection';
-import { HowSimpleItIs } from './components/HowSimpleItIs';
 import { MissionSamples } from './components/MissionSamples';
 import { PhilosophySection } from './components/PhilosophySection';
 import { BonusSection } from './components/BonusSection';
 import { PricingSection } from './components/PricingSection';
-import { FinalCta } from './components/FinalCta';
+import { GuaranteeSection } from './components/GuaranteeSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
 import { CheckoutModal } from './components/CheckoutModal';
@@ -44,47 +42,41 @@ export default function App() {
     <div className="min-h-screen bg-[#FAF7F2] text-[#2C2A29] flex flex-col font-sans selection:bg-[#E06A48]/20 selection:text-[#E06A48]">
       
       <main className="flex-grow">
-        {/* Hero Section with Mockup */}
+        {/* 1ª dobra — HERO */}
         <Hero 
           onOpenCheckout={handleOpenCheckout} 
           onOpenPreview={handleOpenDefaultPreview}
         />
 
-        {/* 3. Pain & Realities of Routine */}
+        {/* 2ª dobra — DOR */}
         <PainPoints />
 
-        {/* 4. Transformation & 7 Hearts */}
-        <Transformation />
-
-        {/* 5. 21 Days Timeline & Interactive Calendar */}
+        {/* 3ª dobra — COMO FUNCIONAM OS 21 DIAS */}
         <TimelineSection onOpenCheckout={handleOpenCheckout} />
 
-        {/* 6. How Simple It Is & 3 Steps */}
-        <HowSimpleItIs />
-
-        {/* 7. Real Mission Experiences Samples */}
+        {/* 4ª dobra — EXEMPLOS REAIS DO MATERIAL */}
         <MissionSamples />
 
-        {/* 8. Philosophy ("Não é ter uma família perfeita...") */}
+        {/* 5ª dobra — FRASE CURTA DE FILOSOFIA */}
         <PhilosophySection />
 
-        {/* 9. 5 Included Bonuses */}
+        {/* 6ª dobra — BÔNUS */}
         <BonusSection onOpenCheckout={handleOpenCheckout} />
 
-        {/* 10. Main Pricing & Value Stack */}
+        {/* 7ª dobra — OFERTA */}
         <PricingSection 
           onOpenCheckout={handleOpenCheckout}
           onOpenPreview={handleOpenDefaultPreview}
         />
 
-        {/* 13. Final Urgency CTA */}
-        <FinalCta onOpenCheckout={handleOpenCheckout} />
+        {/* 8ª dobra — GARANTIA */}
+        <GuaranteeSection />
 
-        {/* 14. FAQ Section */}
+        {/* 9ª dobra — FAQ */}
         <FaqSection />
       </main>
 
-      {/* 15. Footer */}
+      {/* Footer */}
       <Footer />
 
       {/* Modals */}
